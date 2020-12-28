@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import component.crudactionfield.CrudActionField?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="1072.0" styleClass="home-container" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.home.HomeView">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <image>
+            <Image url="@../../assets/img/logo.jpg" />
+         </image>
+      </ImageView>
+      <HBox>
+         <children>
+            <CrudActionField fx:id="creationField" label="ALTAS"/>
+            <CrudActionField fx:id="deletionField" label="BAJAS"/>
+            <CrudActionField fx:id="updateField" label="MODIFICACIONES"/>
+            <CrudActionField fx:id="readingField" label="CONSULTAS"/>
+            <CrudActionField fx:id="reportsField" label="REPORTES"/>
+         </children>
+      </HBox>
+   </children>
+</VBox>
